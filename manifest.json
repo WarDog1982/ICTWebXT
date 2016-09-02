@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "ICTWebXT",
+  "version": "0.1",
+
+  "description": "ICT Support tools",
+
+  "icons": {
+    "48": "icons/TBC.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.service-now.com/*"],
+      "js": ["ICTWebXT.js"]
+    }
+  ]
+"applications": {
+  "gecko": {
+    "id": "ICTWebXT@example.com",
+    "strict_min_version": "42.0",
+    "strict_max_version": "50.*",
+    "update_url": "https://github.com/WarDog1982/ICTWebXT/updates.json"
+  }
+}
